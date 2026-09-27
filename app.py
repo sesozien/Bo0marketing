@@ -93,7 +93,7 @@ with col_img:
     st.subheader("🖼️ صورة المنتج")
     uploaded_image = st.file_uploader("ارفع صورة المنتج", type=["jpg", "png", "jpeg"])
     if uploaded_image:
-        st.image(uploaded_image, caption="معاينة الصورة", use_column_width=True)
+        st.image(uploaded_image, caption="معاينة الصورة", use_container_width=True)
 
 with col_inputs:
     st.subheader("📝 بيانات المنتج")
@@ -225,7 +225,7 @@ else:
 
         # 4. روابط التواصل والمعلومات
         post_text += "\n-----------------------------------\n"
-        post_text += "📲 **للطلب والاستفسار تواصل معنا فوراً:**\n"
+        post_text += "📲 **للطلب واستفسار تواصل معنا فوراً:**\n"
         if whatsapp_num:
             post_text += f"💬 **واتساب مباشر:** https://wa.me/{whatsapp_num.replace('+', '').strip()}\n"
         if contact_phone:
